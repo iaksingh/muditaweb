@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 20px;
+        }
+
+        .container {
+            border-radius: 5px;
+            width: 100%;
+            word-spacing: 1;
+        
+        }
+
+        .split {
+            height: 100%;
+            width: 50%;
+            position: fixed;
+            z-index:1;
+            top: 0;
+            overflow-x:hidden;
+            padding-top: 20px;
+        }
+
+        .left {
+            left: 0;
+
+        }
+
+        .right {
+            right: 0;
+        }
+
+        .centered {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .centered img {
+            width: 150px;
+        }
+
+        textarea,
+        input[type="email"],
+        input[type="text"]
+        {
+            width: 100%;
+            border-radius: 20px;
+            background-color: #fde6c3;
+        }
+
+        input[type="submit"]
+        {
+            background-color: #eac58b;
+            border-radius: 20px;
+            text-align: center;
+            position: center;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+            <div class="centered">
+            <form action="">
+                <img src="Images/suggest.png" alt="Suggestion Box">
+                <p>
+                    <textarea name="suggestion" required id="suggestion" cols="30" rows="3"
+                        placeholder=" Type here....."></textarea>
+                </p>
+                <br>
+                <input type="Submit" value="Submit">
+            </form>
+            </div>
+        </div>
+        <div class="split right">
+            <div class="centered">
+            <form action="">
+                <img src="Images/mailus.png" alt="Mail us">
+                <p>
+                    <input type="text" name="name" required id="name" placeholder="   Name:">
+                </p>
+                <p>
+                    <input type="email" name="email" required id="email" placeholder="   Email:">
+                </p>
+                <br>
+                <img src="Images/bus.png" alt="Bus img">
+                <input type="Submit" value="Send">
+            </form>
+            </div>
+        </div>
+    </div>    
+</body>
+</html>
